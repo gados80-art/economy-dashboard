@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>비농업 고용지수 NFP</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Georgia', serif; background: #fafaf8; }
+.bar { padding: 10px 16px; background: #fff; border-bottom: 1px solid #e8e6e0; display:flex; justify-content:space-between; align-items:center; }
+.bar h1 { font-size: 14px; font-weight: 600; color: #1a1a1a; }
+.bar span { font-size: 11px; color: #999; }
+.widget-wrap { width: 100%; height: calc(100vh - 41px); }
+</style>
+</head>
+<body>
+<div class="bar"><h1>비농업 고용지수 (NFP)</h1><span>TradingView · FRED:PAYEMS</span></div>
+<div class="widget-wrap">
+  <div class="tradingview-widget-container" style="height:100%;width:100%">
+    <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+    {
+      "autosize": true,
+      "symbol": "FRED:PAYEMS",
+      "interval": "M",
+      "timezone": "Asia/Seoul",
+      "theme": "light",
+      "style": "1",
+      "locale": "kr",
+      "allow_symbol_change": false,
+      "calendar": false,
+      "support_host": "https://www.tradingview.com"
+    }
+    </script>
+  </div>
+</div>
+</body>
+</html>
